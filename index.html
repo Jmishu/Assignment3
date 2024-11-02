@@ -21,8 +21,10 @@
           theme: {
             extend: {
               colors: {
+              
                 clifford: '#da373d',
-                'banner-btn': '#ABEF5F',
+                'primary-btn': '#ABEF5F',
+                
 
               }
             }
@@ -31,17 +33,18 @@
       </script>
 </head>
 <body class="font-manrope">
- <!-- <header class=" w-full md:w-4/5 mx-auto mt-20"> -->
+ <header class=" w-full md:w-4/5 mx-auto mt-20">
   <header class="md:container mx-auto">
-  <!-- <nav>
+  <nav>
     <div class="flex gap-32 ">
-      <div class="font-bold text-xl text-black ">
+      <div class="font-bold text-2xl text-black ">
         <h1>Rinterio</h1>
       </div>
       <div>
-        <ul  class="flex gap-12" >
+        <ul  class="flex gap-12 mt-2" >
           <li class="font-bold text-base"><a>Home</a></li>
-          <div class="text-gray-500 flex gap-12">
+          <div class="text-gray-500 flex gap-12
+          ">
             <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
           <li><a>Blogs</a></li>
@@ -57,22 +60,20 @@
         <div>
           <li> shoping<i class="fa-solid fa-cart-shopping"></i></li>
       </div>
-        <div class="text-black font-bold flex-auto">
+        <div class="text-black font-bold mx-5 ">
           <button class="btn primary-btn">Book Consult</button>
 
         </div>
       </div>
     </div>
-  </nav> -->
-  <!-- banner -->
-   <!-- nav -->
+  </nav> 
    <banner>
     <div class="text-center mt-16">
-      <div class="ml-72">
+      <div class="lg:ml-80">
         <img src="./assets/banner.png" alt="">
       </div>
       <div>
-        <h1 class="font-bold text-7xl">A barn house of this design has a <br>striking appearance</h1>
+        <h1 class="font-bold text-5xl">A barn house of this design has a <br>striking appearance</h1>
       </br>
       <p class="mt-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents and large windows that flood the space with natural light</p>
       </div>
@@ -81,6 +82,136 @@
       </div>
     </div>
    </banner>
+    <!-- design section -->
+     <section class="mt-10 bg-gray-100">
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:py-7 py-20 lg:px-36 px-5 gap-10">
+        <div >
+          <div>
+            <img  src="./assets/Vector.png" alt="">
+            <button class="btn banner-btn mt-4 mb-3">About Us</button>
+            <h1 class="text-4xl font-bold mb-3">We design thoughtful,<br> liveable spaces</h1>
+            <p class="text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <div class="flex gap-7 mb-3 mt-4 bg-white py-5 rounded">
+            <div class="ml-4">
+              <img src="./assets/commercial.png" alt="">
+            </div>
+            <div>
+              <h1 class="text-xl font-bold">Commercial</h1>
+          <p class="text-sm">The barn house captivates with its blend <br>of rustic charm and modern. </p>
+            </div>
+          </div>
+          <div class="flex gap-4 mb-4 mt-8  bg-white py-5 rounded">
+            <div class="ml-4">
+              <img src="./assets/residential.png" alt="">
+            </div>
+            <div>
+              <h1 class="text-xl font-bold">Residential</h1>
+              <p class="text-sm">The barn house captivates with its blend <br> of rustic charm    and modern. </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16">
+          <img class="mx-auto" src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+     </section>
+    
+   <!-- review -->
+    <section>
+      <div class="grid grid-cols-1 lg:grid-cols-4 mt-16 mb-16 bg-gray-100 ">
+        <div class="card card-body space-y-2 ">
+          <div>
+           <h2 class="card-title justify-center">335+</h2>
+           <p class="text-gray-500 mt-2 text-center">Happy Clients Review</p>
+          </div>
+       </div>
+       <div class="card card-body space-y-2 ">
+        <div>
+         <h2 class="card-title justify-center">335+</h2>
+         <p class="text-gray-500 mt-2 text-center">Happy Clients Review</p>
+        </div>
+     </div>
+     <div class="card card-body space-y-2 ">
+      <div>
+       <h2 class="card-title justify-center">335+</h2>
+       <p class="text-gray-500 mt-2 text-center">Happy Clients Review</p>
+      </div>
+   </div>
+   <div class="card card-body space-y-2 ">
+    <div>
+     <h2 class="card-title justify-center">335+</h2>
+     <p class="text-gray-500 mt-2 text-center">Happy Clients Review</p>
+    </div>
+ </div>
+      </div>
+    </section>
+   
+   
+       
+   <!-- work process-->
+   <section class="py-10 mt-10 bg-gray-100">
+    <div class="text-center mb-5">
+      <button class="btn primary-btn mb-5 ">How we works</button>
+    <h3  class="text-5xl font-bold mb-5">Our Works Process</h3>
+    <p class="mb-3">A work process is a set of methods and regulations that employees use to complete tasks and create value for a company. <br>Work processes are designed to make operations more productive and effective.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-12 sm:mx-8 lg:mx-36 rounded mx-12">
+      <!-- card1 -->
+      <div class="card card-body space-y-3 bg-pink-200">
+            <div class="">
+                <h2 class="card-title">Concepts</h2>
+                <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+       </div>
+       <div class="card shadow-xl card-body space-y-3 bg-yellow-200">
+        <div class="">
+            <h2 class="card-title">Concepts</h2>
+            <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
+        </div>
+   </div>
+   <div class="card shadow-xl card-body space-y-3 bg-green-200">
+    <div class="">
+        <h2 class="card-title">Concepts</h2>
+        <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
+    </div>
+</div>
+<div class="card shadow-xl card-body space-y-3 bg-blue-300">
+  <div class="">
+      <h2 class="card-title">Concepts</h2>
+      <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
+  </div>
+</div>
+    </div>
+  </section>
+  <!-- latest-section -->
+  <section mb-20>
+    <div class="grid grid-cols-1 lg:grid-cols-3 py-20">
+     <div class="grid grid-cols-3 grid-rows-2 gap-4 lg:w-5/6">
+      <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-lg">
+      </div>
+      <div class="bg-orange-100 rounded-xl row-span-2">
+        <img class="mx-auto" src="./images/fresh-1.png" alt="">
+      </div>
+      <div class="bg-orange-100 rounded-xl row-span-2">
+        <img class="mx-auto" src="./images/fresh-1.png" alt="">
+      </div>
+      <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-lg">
+      </div>
+     </div>
+      <div>
+        <h1 class="text-4xl font-bold mb-5">Great Tea, Freshly Presented</h1>
+        <p class="text-xl text-gray-500">Our original loose tea for an authentic cup of chai, which has been enjoyed in every Indian household for decades. Discover a delicious blend of premium black Indian tea in every cup of tea. This strong, full-bodied and flavorful loose leaf tea can be enjoyed with or without milk.</p>
+      </br>
+      <h1 class="text-2xl font-bold">Unique Taste</h1>
+      <p class="text-xl text-gray-500">A unique and different style from other teapots gives a luxurious and minimalist impression </p>
+    </br>
+    <h1 class="text-2xl font-bold">Premium Quality</h1>
+    <p class="text-xl text-gray-500">Premium Quality that makes tea more elegant and more durable when you used it</p>
+      </div>
+    </div>
+   </section>
+
    <!-- main -->
    <main class="container mx-auto">
    <!-- article parts -->
@@ -91,7 +222,7 @@
       <p class="mb-3">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
 
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-5 mx-28">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-8 mt-5 mx-10 lg:mx-28">
         <!-- card1 -->
         <div class="card bg-base-100 shadow-xl mt-20">
           <figure class="mt-2">
@@ -107,7 +238,7 @@
                    <h3 class="text-sm text-gray-500"><i class="fa-solid fa-user"></i> By Admin</h3>
               </div>
             </div>
-            <h2 class="card-title">How to choose the furniture <br>right  of your home.</h2>
+            <h2 class="card-title text-bold">How to choose the furniture <br>right  of your home.</h2>
             <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern. </p>
             <div class="">
               <button class="btn btn-primary">Buy Now</button>
@@ -129,7 +260,7 @@
                    <h3 class="text-sm text-gray-500"><i class="fa-solid fa-user"></i> By Admin</h3>
               </div>
             </div>
-            <h2 class="card-title">How to choose the furniture <br>right  of your home.</h2>
+            <h2 class="card-title text-bold">How to choose the furniture <br>right  of your home.</h2>
             <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern. </p>
             <div class="">
               <button class="btn btn-primary">Buy Now</button>
@@ -151,7 +282,7 @@
                    <h3 class="text-sm text-gray-500"><i class="fa-solid fa-user"></i> By Admin</h3>
               </div>
             </div>
-            <h2 class="card-title">How to choose the furniture <br>right  of your home.</h2>
+            <h2 class="card-title text-bold">How to choose the furniture <br>right  of your home.</h2>
             <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern. </p>
             <div class="">
               <button class="btn btn-primary">Buy Now</button>
@@ -161,6 +292,28 @@
       </div>
 
     </section>
+    <!-- discuss -->
+     <section >
+      <div class="my-20 py-12 bg-gray-200">
+        <div class="text-center sm:mx-2 mb-5 ">
+          <button class="btn primary-btn mb-5 ">Let's Connect</button>
+          <h3  class="text-5xl font-bold mb-5">Let's Discuss Next Project</h3>
+          <p class="mb-3">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="grid grid-cols-2 mt-10  ml-2 lg:ml-80 gap-2 lg:gap-7">
+          <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
+          <input type="text" placeholder="Last Name" class="input input-bordered w-full max-w-xs" />
+          <input type="text" placeholder="Phone Number*" class="input input-bordered w-full max-w-xs" />
+          <input type="text" placeholder="Email Number*" class="input input-bordered w-full max-w-xs" />
+          <input type="text" placeholder="Write your message here" class="input input-bordered w-full mx-auto h-32 " />
+        </div>
+        <div class="text-center mt-10">
+          <button class="btn primary-btn w-4/6 ml-2 lg:ml-52">Send Mail</button>
+        </div>
+        
+        
+      </div>
+     </section>
     <!-- footer -->
      <footer>
      <div class="bg-black py-16">
@@ -169,7 +322,7 @@
       <p class="text-gray-500 mt-10">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="text-white mt-10">
-        <ul  class="flex gap-20 mx-auto w-5/12" >
+        <ul  class="flex lg:gap-20 gap-8 mx-auto lg:w-5/12" >
           <li><a>Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
