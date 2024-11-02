@@ -22,8 +22,8 @@
             extend: {
               colors: {
               
-                clifford: '#da373d',
-                'primary-btn': '#ABEF5F',
+                clifford:  '#da373d',
+                'main-btn': '#ABEF5F',
                 
 
               }
@@ -35,39 +35,50 @@
 <body class="font-manrope">
  <header class=" w-full md:w-4/5 mx-auto mt-20">
   <header class="md:container mx-auto">
-  <nav>
-    <div class="flex gap-32 ">
-      <div class="font-bold text-2xl text-black ">
-        <h1>Rinterio</h1>
-      </div>
-      <div>
-        <ul  class="flex gap-12 mt-2" >
-          <li class="font-bold text-base"><a>Home</a></li>
-          <div class="text-gray-500 flex gap-12
-          ">
-            <li><a>Services</a></li>
+   <!-- nav part -->
+   <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Home</a></li>
+          <li><a>Services</a> </li>
           <li><a>Portfolio</a></li>
           <li><a>Blogs</a></li>
-          <li><a>About Us</a></li>
-          </div>
+          <li><a>Contact us</a></li>
         </ul>
       </div>
-      <div class="flex flex-row gap-10">
-        <div class=" bg-yellow-50 gap-10 rounded-full">
-          <button>search<i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-        <div>
-          <li> shoping<i class="fa-solid fa-cart-shopping"></i></li>
-      </div>
-        <div class="text-black font-bold mx-5 ">
-          <button class="btn primary-btn">Book Consult</button>
-
-        </div>
-      </div>
+      <a class=" font-bold text-2xl">Rinterio <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-  </nav> 
-   <banner>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>Home</a></li>
+        <li><a>Services</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a class="btn main-btn">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+  <banner>
     <div class="text-center mt-16">
       <div class="lg:ml-80">
         <img src="./assets/banner.png" alt="">
@@ -82,6 +93,8 @@
       </div>
     </div>
    </banner>
+   <!-- main -->
+   <main class="container mx-auto">
     <!-- design section -->
      <section class="mt-10 bg-gray-100">
       <div class="grid grid-cols-1 lg:grid-cols-2 lg:py-7 py-20 lg:px-36 px-5 gap-10">
@@ -146,9 +159,6 @@
  </div>
       </div>
     </section>
-   
-   
-       
    <!-- work process-->
    <section class="py-10 mt-10 bg-gray-100">
     <div class="text-center mb-5">
@@ -160,60 +170,80 @@
       <!-- card1 -->
       <div class="card card-body space-y-3 bg-pink-200">
             <div class="">
-                <h2 class="card-title">Concepts</h2>
+                <img src="./assets/concept.png" alt="">
+                <h2 class="card-title mt-2">Concepts</h2>
                 <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
             </div>
        </div>
        <div class="card shadow-xl card-body space-y-3 bg-yellow-200">
         <div class="">
-            <h2 class="card-title">Concepts</h2>
+            <img src="./assets/flow-chart.png" alt="">
+            <h2 class="card-title mt-2">Concepts</h2>
             <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
         </div>
    </div>
    <div class="card shadow-xl card-body space-y-3 bg-green-200">
     <div class="">
-        <h2 class="card-title">Concepts</h2>
+        <img src="./assets/vision.png" alt="">
+        <h2 class="card-title mt-2">Concepts</h2>
         <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
     </div>
 </div>
 <div class="card shadow-xl card-body space-y-3 bg-blue-300">
   <div class="">
-      <h2 class="card-title">Concepts</h2>
+    <img src="./assets/budget-planning.png" alt="">
+      <h2 class="card-title mt-2">Concepts</h2>
       <p class="text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and modern.</p>
   </div>
 </div>
     </div>
   </section>
-  <!-- latest-section -->
-  <section mb-20>
-    <div class="grid grid-cols-1 lg:grid-cols-3 py-20">
-     <div class="grid grid-cols-3 grid-rows-2 gap-4 lg:w-5/6">
-      <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-lg">
-      </div>
-      <div class="bg-orange-100 rounded-xl row-span-2">
-        <img class="mx-auto" src="./images/fresh-1.png" alt="">
-      </div>
-      <div class="bg-orange-100 rounded-xl row-span-2">
-        <img class="mx-auto" src="./images/fresh-1.png" alt="">
-      </div>
-      <div class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-lg">
-      </div>
-     </div>
-      <div>
-        <h1 class="text-4xl font-bold mb-5">Great Tea, Freshly Presented</h1>
-        <p class="text-xl text-gray-500">Our original loose tea for an authentic cup of chai, which has been enjoyed in every Indian household for decades. Discover a delicious blend of premium black Indian tea in every cup of tea. This strong, full-bodied and flavorful loose leaf tea can be enjoyed with or without milk.</p>
-      </br>
-      <h1 class="text-2xl font-bold">Unique Taste</h1>
-      <p class="text-xl text-gray-500">A unique and different style from other teapots gives a luxurious and minimalist impression </p>
-    </br>
-    <h1 class="text-2xl font-bold">Premium Quality</h1>
-    <p class="text-xl text-gray-500">Premium Quality that makes tea more elegant and more durable when you used it</p>
-      </div>
-    </div>
-   </section>
+  <!-- latest portfolio -->
+    <section class="py-10 mt-10 bg-gray-100">
+      <div class="text-center mb-5">
+        <button class="btn primary-btn mb-5 ">Explore our works</button>
+      <h3  class="text-5xl font-bold mb-5">Our Latest Portfolio</h3>
+      <p class="mb-3">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+      </div> 
+      <!-- latest card -->
+      <div class="py-10">
+        <div class="lg:flex">
+          <div class=" lg:flex">
+            <div class="lg:ml-32 ml-16">
+              <img src="./assets/img1.png" alt="">
+            </div>
+            <div class="mx-8">
+              <h1 class="font-bold text-xl mb-2 mt-6">Commertial</h1>
+              <p class="text-sm text-black mb-3">The barn house captivates with its blend of rustic charm <br>and modern. The barn house captivates with its blend of <br>rustic charm and modern .</p>
+              <a class="text-black font-bold" href="">View Details</a>
+            </div>
+          </div>
+          <div class="lg:gap-7 mt-7 lg:mt-1 ml-16 lg:ml-1 ">
+            <img src="./assets/img2.png" alt="">
+          </div>
+        </div>
+       <!-- latest card2 -->
 
-   <!-- main -->
-   <main class="container mx-auto">
+       <div class="lg:flex ml-24 lg:ml-32 mt-10 gap-3">
+        <div>
+          <img src="./assets/img3.png" alt="">
+        </div>
+        <div class=" lg:flex ml-2">
+          <div class="">
+            <img src="./assets/img1.png" alt="">
+          </div>
+          <div class="mx-8">
+            <h1 class="font-bold text-xl mb-2 mt-6">Commertial</h1>
+            <p class="text-sm text-black mb-3">The barn house captivates with <br> its blend of rustic charm and <br>modern.</p>
+            <a class="text-black font-bold" href="">View Details</a>
+          </div>
+        </div>
+        <div class="mt-6 lg:mt-1">
+          <img src="./assets/img3.png" alt="">
+        </div>
+       </div>
+      </div>
+  </section>
    <!-- article parts -->
     <section class="py-10 mt-10 bg-gray-100">
       <div class="text-center mb-5">
@@ -316,13 +346,13 @@
      </section>
     <!-- footer -->
      <footer>
-     <div class="bg-black py-16">
+     <div class="bg-black py-16 mb-7">
       <div class="text-center ">
           <h1 class="font-bold text-3xl text-white">Rinterio</h1>
       <p class="text-gray-500 mt-10">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="text-white mt-10">
-        <ul  class="flex lg:gap-20 gap-8 mx-auto lg:w-5/12" >
+        <ul  class="flex lg:gap-16 gap-8 mx-auto lg:w-6/12" >
           <li><a>Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
